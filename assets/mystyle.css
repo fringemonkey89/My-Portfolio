@@ -1,0 +1,94 @@
+
+body{
+    background-image: url(./abstract-tech-background-3D-quantum_shutterstock_1093265825.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    font-family:'Oswald', sans-serif;
+    color: whitesmoke;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    width: fit-content;
+    font-size: 42px;
+    margin-top: 0;
+    margin-left: 53px;
+}
+
+nav{
+    height: 50px;
+    width: 50%;
+    float: right;
+}
+
+ul{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    color: limegreen;
+}
+
+li{
+    display: inline;
+}
+
+#side-info{
+    width: 35%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#what-we-do{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+#first-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+#welcome{
+    width: 35%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#welcome h2{
+    font-size: 38px;
+}
+
+article{
+    width: 25%;
+    text-align: center;
+}
+
+article img {
+    width: 75%;
+}
+
+section{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
