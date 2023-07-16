@@ -13,15 +13,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(76, 76, 142);
-    height: 150px;
-}
-
-h1{
-    width: fit-content;
-    font-size: 42px;
-    margin-top: 0;
-    margin-left: 53px;
+    background-color: rgb(67, 67, 80);
+    height: 135px;
 }
 
 nav{
@@ -41,16 +34,25 @@ ul{
 
 li{
     display: inline;
-    border-bottom-style:solid ;
-    border-color: aquamarine;
-    width: 65px;
+    width: fit-content;
     margin: 0 auto 0 auto;
 }
 
+li:hover a{
+    color: yellow;
+    border-bottom-style: dashed;
+    border-bottom-color: yellow ;
+    
+}
+
  a{
-    width: 100%;
+    width: fit-content;
     display: inline-block;
     text-align: center;
+    font-size: 24px;
+    color: aquamarine;
+    border-bottom-style:solid ;
+    border-color: aquamarine;
  }
 
 /* ----- this is the hero image ------*/
@@ -64,13 +66,30 @@ img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: relative;
+    z-index: -1;
 }
 
+#welcome{
+    font-size: 45px;
+    color: rgb(67, 67, 80);
+    background-color: aquamarine;
+    position: absolute;
+    bottom:15px;
+    float: right;
+    z-index: 2;
+}
 
+/*--- all code pertaining to main section are here --*/
 main{
     display: flex;
     flex-direction: column;
     height: 40%;
+}
+
+main, footer{
+    width: 85%;
+    margin: 0px auto 0px auto;
 }
 
 
@@ -81,16 +100,8 @@ aside{
     flex-direction: row;
 }
 
-h2{
-    width: 25%;
-    height: fit-content;
-    text-align: right;
-    border-right-style: solid;
-    margin-right: 50px;
-    padding-right: 20px;
-    margin-bottom: auto;
-    margin-top: auto;
-    
+#me-change{
+    display: block;
 }
 
 p{
@@ -110,7 +121,8 @@ section{
 }
 
 #work-heading{
-    height: 100%;
+    width: 25%;
+    height: 535px;
     border-right-style: solid;
     margin: 0;
 }
@@ -139,22 +151,43 @@ section{
 }
 
 
- h3{
-    width: fit-content;
-    border-style: solid;
-    border-color: aquamarine;
-    
-}
-
 #one{
     width: 100%;
     height: 300px;
-}
-h3{
-    position: absolute;
-    bottom: 10px;
+    margin-top: 0px;
 }
 
+/*-- this where the headers are styled for main, header and footer --*/
+
+h3{
+    width: fit-content;
+    border-style: solid;
+    border-color: aquamarine;
+    position: absolute;
+    bottom: 10px;
+    
+}
+
+h1{
+    width: fit-content;
+    font-size: 42px;
+    margin-top: 0;
+    margin-left: 53px;
+    color: aquamarine;
+}
+
+h2{
+    width: 25%;
+    height: fit-content;
+    text-align: right;
+    border-right-style: solid;
+    padding-right: 20px;
+    margin-bottom: auto;
+    margin-top: auto;
+    
+}
+
+/*-- styles all the poject cards --*/
 #one{
     background-image: url(./tech-picture3.jpg);
     background-repeat:no-repeat;
@@ -162,6 +195,10 @@ h3{
 }
 #two{
     background-image: url(./tech-picture4.jpg);
+}
+
+#three{
+    background-image: url(./tech-picture5.jpg);
 }
 
 #four{
@@ -197,14 +234,109 @@ h3{
     opacity: 1;
 }
 
+/* -- footer section styles for footer elements -- */
+
 footer{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 20%;
+    height: 75px;
 }
 
 footer ul{
     width: 75%;
     margin-top: 19px;
+}
+
+footer ul li{
+    text-align: center;
+    height: fit-content;
+}
+
+footer h2{
+    margin-left: 74px;
+}
+
+@media screen and (max-width:700px){
+    header{
+        flex-direction: column;
+        height: 75px;
+    }
+
+    h1{
+        margin-left: 0px;
+        font-size: 32px;
+    }
+
+    header nav{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    a{
+        font-size: 16px;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    #me-change{
+        display: inline;
+    }
+
+    #work-heading{
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+        border-right-style: none;
+        margin-bottom: 15px;
+    }
+
+    aside{
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    aside h2{
+        width: 100%;
+        text-align: center;
+        border-right-style: none;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+
+    aside p{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #one, #two, #three, #four, #five{
+        width: 100%;
+        height: 100px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer h2{
+        width: 100%;
+        text-align: center;
+        border-right-style: none;
+    }
+
+    footer ul li{
+        width: 35%;
+    }
+
+    footer ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
