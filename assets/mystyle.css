@@ -1,18 +1,28 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
-    background-image: url(./abstract-tech-background-3D-quantum_shutterstock_1093265825.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    font-family:'Oswald', sans-serif;
-    color: whitesmoke;
+   background-color: azure;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(76, 76, 142);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.hero{
+    height:300px;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+}
+
 
 h1{
     width: fit-content;
@@ -32,7 +42,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 0 0 0;
+    margin-top: 6px;
     color: limegreen;
 }
 
@@ -40,55 +50,90 @@ li{
     display: inline;
 }
 
-#side-info{
-    width: 35%;
-}
 main{
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    height: 50%;
 }
 
-#what-we-do{
+
+aside{
     width: 100%;
-    text-align: center;
-    margin-bottom: 75px;
-}
-
-#first-section{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 150px;
-}
-#welcome{
-    width: 35%;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
-#welcome h2{
-    font-size: 38px;
-}
-
-article{
+h2{
     width: 25%;
-    text-align: center;
+    text-align: right;
+    border-right-style: solid;
+    margin-right: 50px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    
 }
 
-article img {
+p{
     width: 75%;
 }
 
 section{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+
+.container{
+    width: 75%;
     height: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.project{
+    width: 50%;
+    height: 50%;
+    border-style: solid;
+    border-color: aquamarine;
+    position: relative;
+    color: aliceblue;
+}
+
+
+ h3{
+    width: fit-content;
+    border-style: solid;
+    border-color: aquamarine;
+    position  
+}
+
+#one{
+    width: 100%;
+    height: 300px;
+}
+#one h3{
+    position: absolute;
+    bottom: -5px;
+}
+
+#five{
+    background-image: url(./tech-picture1.jpg);
+    opacity: .6;
+}
+
+#five:hover{
+    opacity: 1;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+footer ul{
+    width: 75%;
+    margin-top: 19px;
 }
