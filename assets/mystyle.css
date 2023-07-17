@@ -3,8 +3,10 @@
     margin: 0;
     padding: 0;
 }
+
+/*-- sets the background color for webpage --*/ 
 body{
-   background-color: azure;
+   background-color: rgb(224, 220, 224);
 }
 
 /* -------header styling -------- */
@@ -16,6 +18,8 @@ header{
     background-color: rgb(67, 67, 80);
     height: 135px;
 }
+
+/*-- styling for nav, ul, li and a elements in the header section --*/
 
 nav{
     height: 50px;
@@ -38,14 +42,8 @@ li{
     margin: 0 auto 0 auto;
 }
 
-li:hover a{
-    color: yellow;
-    border-bottom-style: dashed;
-    border-bottom-color: yellow ;
-    
-}
-
- a{
+/* this is responsible for the header link elements style */
+a{
     width: fit-content;
     display: inline-block;
     text-align: center;
@@ -55,8 +53,16 @@ li:hover a{
     border-color: aquamarine;
  }
 
+/*- when the user hovers over the li element, the font color and border color change to yellow */ 
+li:hover a{
+    color: yellow;
+    border-bottom-color: yellow ;
+    
+}
+
 /* ----- this is the hero image ------*/
 
+/* sets the height and width for hero banner */
 .hero{
     height: 250px;
     width: 100%;
@@ -120,12 +126,6 @@ section{
     margin-top: 15px;
 }
 
-#work-heading{
-    width: 25%;
-    height: 535px;
-    border-right-style: solid;
-    margin: 0;
-}
 
 .container{
     width: 75%;
@@ -135,34 +135,12 @@ section{
     flex-wrap: wrap;
 }
 
-.project{
-    width: calc(50% - 10px);
-    height: 100px;
-    border-style: solid;
-    border-color: aquamarine;
-    position: relative;
-    color: aliceblue;
-    margin: 9px 5px 9px 5px;
-    position: relative;
-    
-   }
-.project:hover {
-    opacity: 1;
-}
-
-
-#one{
-    width: 100%;
-    height: 300px;
-    margin-top: 0px;
-}
-
-/*-- this where the headers are styled for main, header and footer --*/
+/*-- this where the headers are styled for header, main and footer sections --*/
 
 h3{
     width: fit-content;
-    border-style: solid;
-    border-color: aquamarine;
+    background-color: aquamarine;
+    color: rgb(67, 67, 80);
     position: absolute;
     bottom: 10px;
     
@@ -180,19 +158,54 @@ h2{
     width: 25%;
     height: fit-content;
     text-align: right;
+    border-color:  rgb(67, 67, 80);
     border-right-style: solid;
     padding-right: 20px;
     margin-bottom: auto;
     margin-top: auto;
+    color:  rgb(67, 67, 80);
     
 }
 
-/*-- styles all the poject cards --*/
+.sub-heading{
+    display: block;
+}
+
+#work-heading{
+    width: 25%;
+    height: 535px;
+    border-right-style: solid;
+    margin: 0;
+}
+/*-- styles all the poject cards  and sets the background image for each porject card --*/
+/*-- all project cards are given their initial dimensions and style properties --*/
+.project{
+    width: calc(50% - 10px);
+    height: 100px;
+    border-style: solid;
+    border-color: aquamarine;
+    position: relative;
+    color: aliceblue;
+    margin: 9px 5px 9px 5px;
+    position: relative;
+    
+   }
+   /*-- if you hover over the project card, its opacity is lessened --*/
+.project:hover {
+    opacity: 1;
+}
+
+/* this is where the project one card is made larger than the other project cards */
 #one{
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
     background-image: url(./tech-picture3.jpg);
     background-repeat:no-repeat;
     background-position: contain;
 }
+
+/*-- this is where the background images are set for the remaining project cards */
 #two{
     background-image: url(./tech-picture4.jpg);
 }
@@ -210,10 +223,12 @@ h2{
     background-image: url(./tech-picture1.jpg);
 }
 
+/*--each card is made more opaque, or, lighter --*/
 #one, #two, #three, #four, #five{
     opacity: .70;
 }
 
+/*-- this where the hover effect is applied to each project card  from one to five --*/
 #one:hover{
     opacity: 1;
 }
@@ -243,9 +258,18 @@ footer{
     height: 75px;
 }
 
-footer ul{
+footer h2{
+    margin-left: 74px;
+}
+
+/*below is where all the nav, ul, li and a elements in the footer section are styled */
+footer nav{
     width: 75%;
     margin-top: 19px;
+}
+
+footer ul{
+    margin-top: 0px;
 }
 
 footer ul li{
@@ -253,10 +277,14 @@ footer ul li{
     height: fit-content;
 }
 
-footer h2{
-    margin-left: 74px;
+footer ul li a{
+    color:  rgb(67, 67, 80);
+    border-color:rgb(67, 67, 80) ;
 }
 
+
+
+/*-- here is where the media query code is held along with all the affected elements --*/
 @media screen and (max-width:700px){
     header{
         flex-direction: column;
@@ -316,6 +344,11 @@ footer h2{
         height: fit-content;
     }
 
+    h3{
+        left: calc((100% - 92px) / 2);
+        bottom: 0px;
+    }
+
     #one, #two, #three, #four, #five{
         width: 100%;
         height: 100px;
@@ -324,15 +357,20 @@ footer h2{
     footer{
         flex-direction: column;
     }
+     footer nav{
+        width: 100%;
+     }
 
     footer h2{
         width: 100%;
         text-align: center;
         border-right-style: none;
+        margin-left: 0px;
     }
 
     footer ul li{
         width: 35%;
+        margin-bottom: 10px;
     }
 
     footer ul{

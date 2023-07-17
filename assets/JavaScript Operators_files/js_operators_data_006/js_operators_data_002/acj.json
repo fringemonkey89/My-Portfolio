@@ -1,0 +1,35 @@
+OX_3134311107({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"https://ox-delivery-prod-us-central1.openx.net/{medium}/1.0/{rtype}?ai=6a47bfe3-0e47-4ca5-9161-67fd4c422dd5&ph=c60c4e0c-5442-4600-876b-e4035d01b1eb&ts={txn_state}",
+    "pixels":"https://us-u.openx.net/w/1.0/pd?plm=6&ph=c60c4e0c-5442-4600-876b-e4035d01b1eb&gdpr=0&us_privacy=1---",
+    "oxt": 14.99,
+    "adunits" : [
+      {
+        "auid":"540929538",
+        "idx":"0",
+        "chain_revenue":"",
+        "chain":[
+          {
+            "is_fallback":1,
+            "ad_id":"0",
+            "adv_acct_id":"",
+            "is_ng":1,
+            "adv_id":":",
+            "brand_id":"",
+            "cpipc":0,
+            "auct_win_is_deal":0,
+            "pub_rev":"",
+            "width":"300",
+            "height":"250",
+            "html":"<script type=\"text/javascript\" src=\"https://ap.lijit.com/www/delivery/fpi.js?z=662029&width=300&height=250\"></script>",
+            "target":"_blank",
+            "ts":"2DAABBgABAAECAAIBAAsAAgAAAGkcGApRYnl6d21WQ0RWHBaQtvrV74aVhVYW6cK4qe7b0-TpAQAcFv_DzYvpi6vtigEWqcLr8O_gx5-rAQAWlMmsywwVAhEALBwVAgAAHCaEuO-DBBUEFQQmgrjvgwQWxvGggAQlAhUCAAAA",
+            "type":"html",
+            "ad_url":"<script type=\"text/javascript\" src=\"https://ap.lijit.com/www/delivery/fpi.js?z=662029&width=300&height=250\"></script>"
+          }
+        ]
+      }
+    ]
+  }
+});
