@@ -374,6 +374,10 @@ footer ul li a{
         bottom: 0px;
     }
 
+    /* makes all project card height the same */
+    .project, #one{
+        height: 150px;
+    }
 
     /*-------foooter section --------*/
 
