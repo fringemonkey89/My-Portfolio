@@ -26,3 +26,12 @@ contain instructions, or details about updates.
 <img src ="assets/screenshot1.png" width="350"  height="450">
  <p>This is my portfolio website on a mobile device screen</p>
 <img src ="assets/Screenshot2.png" width="350"  height="650">
+
+## Installation
+**N/A**
+
+## Credits
+**N/A**
+
+## Link to Website
+
