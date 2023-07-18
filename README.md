@@ -5,5 +5,7 @@
 **HTML** **CSS** 
 
 ## Screen Shots
-<img src ="assets/screenshot1.png" width="250"  height="250">
-<img src ="assets/Screenshot2.png" width="250"  height="250">
+<p style="color:blue;font-size:16">This is my portfolio website on a desktop screen</p>
+<img src ="assets/screenshot1.png" width="350"  height="450">
+<p style="color:blue;font-size:16">This is my portfolio website on a desktop screen</p>
+<img src ="assets/Screenshot2.png" width="350"  height="450">
