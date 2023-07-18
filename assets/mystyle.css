@@ -66,27 +66,31 @@ li:hover a{
 .hero{
     height: 250px;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: relative;
-    z-index: -1;
 }
 
+/* sets the position and styling for welcome span */
 #welcome{
     font-size: 45px;
+    text-align: center;
     color: rgb(67, 67, 80);
+    display: block;
     background-color: aquamarine;
     position: absolute;
     bottom:15px;
-    float: right;
+    right: 250px;
+    width: 300px;
     z-index: 2;
 }
 
-/*--- all code pertaining to main section are here --*/
+/*--- all styles pertaining to main section are here --*/
 main{
     display: flex;
     flex-direction: column;
@@ -106,8 +110,11 @@ aside{
     flex-direction: row;
 }
 
+/* this code styles the span inside the asides h2 element */
+
 #me-change{
     display: block;
+    font-size: 42px;
 }
 
 p{
@@ -155,6 +162,7 @@ h1{
 }
 
 h2{
+    font-size: 42px;
     width: 25%;
     height: fit-content;
     text-align: right;
@@ -167,6 +175,7 @@ h2{
     
 }
 
+/* this sets the display for project headings */
 .sub-heading{
     display: block;
 }
@@ -259,7 +268,7 @@ footer{
 }
 
 footer h2{
-    margin-left: 74px;
+    margin-left: 90px;
 }
 
 /*below is where all the nav, ul, li and a elements in the footer section are styled */
@@ -286,6 +295,9 @@ footer ul li a{
 
 /*-- here is where the media query code is held along with all the affected elements --*/
 @media screen and (max-width:700px){
+
+    /* ---------header section---------- */
+    /* changes flex direction to column so items stack certically */
     header{
         flex-direction: column;
         height: 75px;
@@ -305,22 +317,17 @@ footer ul li a{
         font-size: 16px;
     }
 
+   #welcome{
+    left: 100px;
+   }
+   /*-------------------------------------------*/
+
+   /*stacks the aside and project container vertically */
     section{
         flex-direction: column;
     }
 
-    #me-change{
-        display: inline;
-    }
-
-    #work-heading{
-        height: fit-content;
-        width: 100%;
-        text-align: center;
-        border-right-style: none;
-        margin-bottom: 15px;
-    }
-
+    /* aside section styling */
     aside{
         height: fit-content;
         flex-direction: column;
@@ -331,17 +338,35 @@ footer ul li a{
         text-align: center;
         border-right-style: none;
         margin-top: 15px;
-        font-size: 25px;
+        font-size: 42px;
     }
 
     aside p{
         width: 100%;
     }
 
+    #me-change{
+        display: inline;
+    }
+    /*--------------------------*/
+    #work-heading{
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+        border-right-style: none;
+        margin-bottom: 15px;
+    }
+    /*changes the flex direction so project cards stack vertically */
     .container{
         width: 100%;
         flex-direction: column;
         height: fit-content;
+    }
+
+     /* this makes the background images fit without repeating*/
+     #one, #two, #three, #four, #five{
+        width: 100%;
+        background-size: cover;
     }
 
     h3{
@@ -349,11 +374,10 @@ footer ul li a{
         bottom: 0px;
     }
 
-    #one, #two, #three, #four, #five{
-        width: 100%;
-        height: 100px;
-    }
 
+    /*-------foooter section --------*/
+
+    /* changes flex direction to column */
     footer{
         flex-direction: column;
     }
