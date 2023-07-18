@@ -5,6 +5,5 @@
 **HTML** **CSS** 
 
 ## Screen Shots
-![](./assets/screenshot1.png =100x20)
-![](./assets/Screenshot2.png =100x20)
-
+<img src ="assets/screenshot1.png" width="250"  height="250">
+<img src ="assets/Screenshot2.png" width="250"  height="250">
