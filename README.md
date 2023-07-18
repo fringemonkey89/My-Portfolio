@@ -5,6 +5,6 @@
 **HTML** **CSS** 
 
 ## Screen Shots
-[![alt text](/assets./screenshot1.png)]
+![](/assets/screenshot1.png)
 
-[![alt text](/assets./Screenshot2.png)]
+![](/assets/Screenshot2.png)
