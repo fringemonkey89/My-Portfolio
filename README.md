@@ -5,6 +5,7 @@
 **HTML** **CSS** 
 
 ## Screen Shots
-![](/assets/screenshot1.png)
+<img src= "/assets/screenshot1" alt="drawing" width="200"/>
 
-![](/assets/Screenshot2.png)
+<img src= "/assets/Screenshot2" alt="drawing" width="200"/>
+
