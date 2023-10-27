@@ -28,6 +28,8 @@ contain instructions, or details about updates.
 <img src ="assets/Screenshot2.png" width="350"  height="650">
 <p> This is my project 1 webpage</p>
 <img src = "assets/Screenshot-1.png" width="350"  height="450">
+<p>this is a screenshot of project 2</p>
+<img src>
 
 ## Installation
 **N/A**
