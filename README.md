@@ -29,7 +29,10 @@ contain instructions, or details about updates.
 <p> This is my project 1 webpage</p>
 <img src = "assets/Screenshot-1.png" width="350"  height="450">
 <p>this is a screenshot of project 2</p>
-<img src>
+<img src = "assets/project2pic.png" width="350"  height="450">
+<p>this is a screenshot of project 2</p>
+<img src = "assets/ScreenshotProject2.png" width="350"  height="450">
+
 
 ## Installation
 **N/A**
