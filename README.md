@@ -32,7 +32,10 @@ contain instructions, or details about updates.
 <img src = "assets/project2pic.png" width="350"  height="450">
 <p>this is a screenshot of project 2</p>
 <img src = "assets/ScreenshotProject2.png" width="350"  height="450">
-
+<p>this is a screenshot of project 3</p>
+<img src>
+<p>this is a screenshot of project 3</p>
+<img src>
 
 ## Installation
 **N/A**
